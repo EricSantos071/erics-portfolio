@@ -11,11 +11,15 @@ Welcome to my Portfolio!
 Here is when the changelog will be related and updated according to the time learning this, feel welcome to leave a comment too if you desire, welcoming suggestions!
 
 
-Changelog 19/12/25:
+ - Changelog 19/12/25:
 
 Created base project and posted into github (mywebsite directory)
 
-Changelog 24/12/25 (Happy Xmas Eve everyone!):
+ - Changelog 24/12/25 (Happy Xmas Eve everyone!):
 
 Added a readme.md file (next time to be added first lol)
 Added "base" directory and inserted into settings.py
+
+ - Changelog 26/12/25
+
+ Added staticfiles folder with it's content within - connected to settings.py

@@ -1,1 +1,8 @@
+<!-- Django way of knowing a css file -->
+{% load static %}
+
+<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+
 <h3>Hello World!</h3>
+
+<img src="{% static '/images/ericsprofile.jpeg' %}">
