@@ -10,6 +10,9 @@ Welcome to my Portfolio!
 
 Here is when the changelog will be related and updated according to the time learning this, feel welcome to leave a comment too if you desire, welcoming suggestions!
 
+Based on original author: https://youtu.be/pLN-OnXjOJg?list=PL-51WBLyFTg38qZ0KHkJj-paDQAAu9HiP
+Dennis Ivy
+
 
  - Changelog 19/12/25:
 
@@ -23,3 +26,7 @@ Added "base" directory and inserted into settings.py
  - Changelog 26/12/25
 
  Added staticfiles folder with it's content within - connected to settings.py
+
+ - Changelog 28/12/25
+
+ Added content into html/css portfolio
