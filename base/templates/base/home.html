@@ -18,9 +18,14 @@
             <div class="col-md-3">
                 <div class="card card-body h-100 border-info" id="profile-wrapper">
                     <img id="profile-pic" src="{% static '/images/ericsprofile.jpeg' %}">
+                    {% if bio %}
                     <hr>
-                    <h4>Little intro goes here</h4>
-                    <p>Small text goes here</p>
+                    <h4>Hello, my name's {{ bio.name }}!</h4>
+                    <p>{{ bio.introduction }}</p>
+                    {% else %}
+                    <h4>Welcome to my portfolio!</h4>
+                    <p>Please add a Bio in the Admin panel.</p>
+                    {% endif %}
                 </div>
             </div>
 
@@ -28,11 +33,10 @@
                 <div class="card card-body h-100 border-info"></div>
                 <h4>LinkedIn</h4>
                 <hr>
-                <p>Intro goes here</p>
 
-                <p>Second paragraph goes here</p>
-
-                <p>As many you'll need</p>
+                <p>I am actively transitioning my career into Software Development and Programming, driven by a deep fascination with how code powers the digital world. 
+                   What began as a curiosity sparked by web development tutorials has evolved into a dedicated pursuit of formal CS education and hands-on full-stack engineering.
+                </p>
 
                 <ul class="social-links">
                     <li><img class="social" src="" alt="linkedin"></li>
@@ -45,20 +49,21 @@
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h5>My experience no.1</h5>
+                {% for exp in experiences %}
+                <div class="card card-body mb-3">
+                    <h5>{{ exp.title }}</h5>
                     <hr>
-                    <p>Line 1</p>
-                    <p>Line 2</p>
+                    <p>{{ exp.description }}</p>
                 </div>
+                {% endfor %}
             </div>
 
             <div class="col-md-6">
                 <div class="card card-body h-100">
                     <h5>What I know</h5>
                     <hr>
-                    <p>Line 1</p>
-                    <p>Line 2</p>
+                    <p>CS College Degree (Ongoing)</p>
+                    <p>Technical IT Course (Ongoing)</p>
                 </div>
             </div>
 
@@ -69,8 +74,9 @@
                 <div class="card card-body h-100">
                     <h5>How I learn</h5>
                     <hr>
-                    <p>Line 1</p>
-                    <p>Line 2</p>
+                    <p>Apart from the CS College, and the Technical Course.
+                       I go by trying to writte code with the aid of YT videos, outside courses and AI as a tool to learn and depth explanation of what I'm doing.
+                    </p>
                 </div>
             </div>
 
@@ -78,8 +84,7 @@
                 <div class="card card-body h-100">
                     <h5>My goals</h5>
                     <hr>
-                    <p>Line 1</p>
-                    <p>Line 2</p>
+                    <p>I am focused on mastering full-stack architecture and have a keen interest in mobile development—leveraging the power of 'pocket computers' to solve real-world problems.</p>
                 </div>
             </div>
 
