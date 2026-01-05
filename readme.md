@@ -38,3 +38,8 @@ Added "base" directory and inserted into settings.py
  views.py also got modded, to grab the experiences from the database, and hand them into html
  models registered into admin.py
 
+ - Changelog 01/05/26
+
+ Updated admin.py into a visible admin panel (More admin friendly tho)
+ Fixed LinkedIn div positioning (line 33 moved closed tag to line 46)
+
