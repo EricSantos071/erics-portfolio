@@ -43,3 +43,7 @@ Added "base" directory and inserted into settings.py
  Updated admin.py into a visible admin panel (More admin friendly tho)
  Fixed LinkedIn div positioning (line 33 moved closed tag to line 46)
 
+ - Changelog 01/08/26
+ Making the entire page database ridden
+ Intro, links, what I know and How I learn
+

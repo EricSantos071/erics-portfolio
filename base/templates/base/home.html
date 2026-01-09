@@ -31,17 +31,19 @@
 
             <div class="col-md-9">
                 <div class="card card-body h-100 border-info">
-                    <h4>LinkedIn</h4>
+                    <h4>About Me</h4>
                     <hr>
 
-                    <p>I am actively transitioning my career into Software Development and Programming, driven by a deep fascination with how code powers the digital world. 
-                    What began as a curiosity sparked by web development tutorials has evolved into a dedicated pursuit of formal CS education and hands-on full-stack engineering.
-                    </p>
+                    <p>{{ bio.introduction }}</p>
 
                     <ul class="social-links">
-                        <li><img class="social" src="" alt="linkedin"></li>
-                        <li><img class="social" src="" alt="github"></li>
-                        <li><img class="social" src="" alt="instagram"></li>
+                        {% if bio.linkedin_url %}
+                        <li><a href="{{ bio.linkedin_url }}"><img class="social" src="{% static 'images/linkedin.png' %}" alt="linkedin"></a></li>
+                        {% endif %}
+                        
+                        {% if bio.github_url %}
+                        <li><a href="{{ bio.github_url }}"><img class="social" src="{% static 'images/github.png' %}" alt="github"></a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
@@ -63,8 +65,7 @@
                 <div class="card card-body h-100">
                     <h5>What I know</h5>
                     <hr>
-                    <p>CS College Degree (Ongoing)</p>
-                    <p>Technical IT Course (Ongoing)</p>
+                    <p style="white-space: pre-wrap;">{{ bio.what_i_know }}</p>
                 </div>
             </div>
 
@@ -75,9 +76,7 @@
                 <div class="card card-body h-100">
                     <h5>How I learn</h5>
                     <hr>
-                    <p>Apart from the CS College, and the Technical Course.
-                       I go by trying to writte code with the aid of YT videos, outside courses and AI as a tool to learn and depth explanation of what I'm doing.
-                    </p>
+                    <p>{{ bio.how_i_learn }}</p>
                 </div>
             </div>
 
@@ -85,7 +84,7 @@
                 <div class="card card-body h-100">
                     <h5>My goals</h5>
                     <hr>
-                    <p>I am focused on mastering full-stack architecture and have a keen interest in mobile development—leveraging the power of 'pocket computers' to solve real-world problems.</p>
+                    <p>{{ bio.my_goals }}</p>
                 </div>
             </div>
 
