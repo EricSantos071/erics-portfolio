@@ -18,24 +18,10 @@
             <div class="col-md-3">
                 <div class="card card-body h-100 border-info" id="profile-wrapper">
                     <img id="profile-pic" src="{% static '/images/ericsprofile.jpeg' %}">
-                    {% if bio %}
                     <hr>
+                    
                     <h4>Hello, my name's {{ bio.name }}!</h4>
-                    <p>{{ bio.introduction }}</p>
-                    {% else %}
-                    <h4>Welcome to my portfolio!</h4>
-                    <p>Please add a Bio in the Admin panel.</p>
-                    {% endif %}
-                </div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="card card-body h-100 border-info">
-                    <h4>About Me</h4>
-                    <hr>
-
-                    <p>{{ bio.introduction }}</p>
-
+                    
                     <ul class="social-links">
                         {% if bio.linkedin_url %}
                         <li><a href="{{ bio.linkedin_url }}"><img class="social" src="{% static 'images/linkedin.png' %}" alt="linkedin"></a></li>
@@ -45,6 +31,14 @@
                         <li><a href="{{ bio.github_url }}"><img class="social" src="{% static 'images/github.png' %}" alt="github"></a></li>
                         {% endif %}
                     </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-body h-100 border-info">
+                    <h4>About Me</h4>
+                        <hr>
+                        <p style="white-space: pre-wrap;">{{ bio.introduction }}</p>                   
                 </div>
             </div>
 

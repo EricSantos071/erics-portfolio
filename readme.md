@@ -47,3 +47,6 @@ Added "base" directory and inserted into settings.py
  Making the entire page database ridden
  Intro, links, what I know and How I learn
 
+ - Changelog 01/16/26
+ Updated Socials icons, adjusted Intro and Profile windows by repositioning the icons around
+

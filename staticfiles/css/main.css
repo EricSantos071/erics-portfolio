@@ -23,14 +23,19 @@ ul
     list-style-type: none;
 }
 
-.social-links ul li
-{
-    list-style-type: none;
-    display: inline-block;
+.social-links {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.social
-{
-    width: 20px;
-    height: 20px;
+.social {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.social:hover {
+    transform: scale(1.1); /* Little pop effect on hover */
 }
