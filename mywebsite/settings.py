@@ -116,13 +116,25 @@ USE_I18N = True
 
 USE_TZ = True
 
+#Old version - No updated tracking
+#STATIC_URL = '/staticfiles/'
+#MEDIA_URL = '/images/'
+
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'staticfiles')
+#]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
-MEDIA_URL = '/images/'
+# 1. The URL used to access static files in the browser
+STATIC_URL = 'static/' 
 
+# 2. Where YOU put your CSS and Images (Your "Source" folder)
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles')
+    os.path.join(BASE_DIR, 'static'),
 ]
+
+# 3. Where Django COPIES files for the web host (The "Destination")
+# This must be a DIFFERENT name than the one above
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

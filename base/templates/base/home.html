@@ -22,13 +22,17 @@
                     
                     <h4>Hello, my name's {{ bio.name }}!</h4>
                     
-                    <ul class="social-links">
+                    <ul class="social-links d-flex justify-content-around list-unstyled mt-2">
                         {% if bio.linkedin_url %}
-                        <li><a href="{{ bio.linkedin_url }}"><img class="social" src="{% static 'images/linkedin.png' %}" alt="linkedin"></a></li>
+                        <li><a href="{{ bio.linkedin_url }}"><img class="social" src="{% static 'images/linkedin.png' %}" alt="linkedin" width="30"></a></li>
                         {% endif %}
                         
                         {% if bio.github_url %}
-                        <li><a href="{{ bio.github_url }}"><img class="social" src="{% static 'images/github.png' %}" alt="github"></a></li>
+                        <li><a href="{{ bio.github_url }}"><img class="social" src="{% static 'images/github.png' %}" alt="github" width="30"></a></li>
+                        {% endif %}
+                        
+                        {% if bio.instagram_url %}
+                        <li><a href="{{ bio.instagram_url }}"><img class="social" src="{% static 'images/instagram.png' %}" alt="instagram" width="30"></a></li>
                         {% endif %}
                     </ul>
                 </div>
