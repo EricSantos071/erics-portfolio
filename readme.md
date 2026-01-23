@@ -1,52 +1,57 @@
-PT/BR
+# 🚀 Meu Portfólio Pessoal
 
-Bem-Vindo ao meu Portfólio
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-green?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/github/languages/top/seu-usuario/seu-repositorio?style=for-the-badge" alt="Top Language">
+</p>
 
-Aqui é onde as mudanças serão relatadas e atualizadas conforme o tempo passa com ese aprendizado, seja bem vindo para deixar algum comentário também caso desejar em sugestão!
+> **Nota:** Este projeto é uma jornada de aprendizado contínuo, focado em criar um portfólio dinâmico e gerenciável via banco de dados.
 
-EN
+---
 
-Welcome to my Portfolio!
+## 🌐 Idiomas / Languages
 
-Here is when the changelog will be related and updated according to the time learning this, feel welcome to leave a comment too if you desire, welcoming suggestions!
+- [Português](#-bem-vindo-ao-meu-portfólio)
+- [English](#-welcome-to-my-portfolio)
 
-Based on original author: https://youtu.be/pLN-OnXjOJg?list=PL-51WBLyFTg38qZ0KHkJj-paDQAAu9HiP
-Dennis Ivy
+---
 
+## 🇧🇷 Bem-Vindo ao meu Portfólio!
 
- - Changelog 12/19/25:
+Este repositório documenta minha evolução técnica e as mudanças implementadas no meu site pessoal. Sinta-se à vontade para explorar o código e deixar sugestões nos comentários ou através de Issues!
 
-Created base project and posted into github (mywebsite directory)
+### 🛠️ Créditos e Inspiração
+Baseado no projeto original de [Dennis Ivy](https://youtu.be/pLN-OnXjOJg?list=PL-51WBLyFTg38qZ0KHkJj-paDQAAu9HiP).
 
- - Changelog 12/24/25 (Happy Xmas Eve everyone!):
+---
 
-Added a readme.md file (next time to be added first lol)
-Added "base" directory and inserted into settings.py
+## 🇺🇸 Welcome to my Portfolio!
 
- - Changelog 12/26/25
+This is where my technical evolution and changes to my personal website are recorded. Feel free to explore and leave suggestions!
 
- Added staticfiles folder with it's content within - connected to settings.py
+### 🛠️ Credits and Inspiration
+Based on the original author: [Dennis Ivy](https://youtu.be/pLN-OnXjOJg?list=PL-51WBLyFTg38qZ0KHkJj-paDQAAu9HiP).
 
- - Changelog 12/28/25
+---
 
- Added content into html/css portfolio
+## 📋 Changelog (Histórico de Alterações)
 
- - Changelog 01/04/2026 (Happy New Year!)
+Aqui estão os marcos do desenvolvimento deste projeto:
 
- Modified html content to receive the adapted database (line 48 Experience column) and (line 16 bio section)
- Added compatibility with a database to update progress easier than medling the html file. Adding into models.py
- views.py also got modded, to grab the experiences from the database, and hand them into html
- models registered into admin.py
+| Data | Descrição das Mudanças |
+| :--- | :--- |
+| **19/12/25** | 🚀 Criação do projeto base e upload para o GitHub. |
+| **24/12/25** | 📝 Adicionado `README.md` e configuração do diretório "base" no `settings.py`. |
+| **26/12/25** | 📁 Estrutura de `staticfiles` conectada ao Django. |
+| **28/12/25** | 🎨 Início da estilização HTML/CSS do portfólio. |
+| **04/01/26** | 🔋 **Grande Update:** Integração com Banco de Dados. Migração de conteúdo estático para dinâmico (Experiência e Bio) via `models.py` e `views.py`. |
+| **05/01/26** | 🛡️ Painel Admin customizado e ajustes de layout no LinkedIn. |
+| **08/01/26** | 🏗️ Refatoração completa: Introdução, Links e Skills agora são 100% gerenciados via DB. |
+| **16/01/26** | ✨ Novos ícones sociais e ajuste fino no posicionamento das janelas de Perfil. |
 
- - Changelog 01/05/26
+---
 
- Updated admin.py into a visible admin panel (More admin friendly tho)
- Fixed LinkedIn div positioning (line 33 moved closed tag to line 46)
-
- - Changelog 01/08/26
- Making the entire page database ridden
- Intro, links, what I know and How I learn
-
- - Changelog 01/16/26
- Updated Socials icons, adjusted Intro and Profile windows by repositioning the icons around
-
+## 🛠️ Tecnologias Utilizadas
+- **Python / Django** (Backend & Admin)
+- **HTML5 / CSS3** (Frontend)
+- **SQLite** (Database)
